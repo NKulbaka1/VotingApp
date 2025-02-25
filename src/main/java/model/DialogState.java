@@ -1,0 +1,9 @@
+package model;
+
+public enum DialogState {
+    IDLE,
+    AWAITING_VOTE_NAME,
+    AWAITING_VOTE_DESCRIPTION,
+    AWAITING_NUMBER_OF_OPTIONS,
+    AWAITING_OPTIONS
+}

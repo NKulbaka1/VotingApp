@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.kulbaka'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "io.netty:netty-all:${nettyVersion}"
+    testImplementation platform("org.junit:junit-bom:${jUnitVersion}")
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
